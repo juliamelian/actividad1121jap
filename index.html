@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <!-- Creamos el formulario -->
+    <form id="formulario-registro"> 
+        <!-- Creamos los divs con los inputs solicitados, es importante que tenga el atributo name declarado
+        porque luego, cuando se envían los datos el valor de este atributo es el que va en la solicitud como clave -->
+        <div> Nombre: <input name="nombre" type="text" id="nombre" required></div>
+        <br>
+        <div> Apellido: <input name="apellido" type="text" id="apellido" required></div>
+        <br>
+        <div> Fecha de nacimiento: <input name="nacimiento" type="date" id="nacimiento" required></div>
+        <br>
+        <!-- Creamos el botón de registro, es importante que el valor del atributo type sea submit para que
+        el addEventListener lea el evento submit y se pueda mandar la info -->
+        <div><button type="submit" id="registrar">Registrar</button></div>
+    </form>
+</body>
+
+<!-- Linkeamos el script creado -->
+<script src="script.js"></script>
+
+</html>
